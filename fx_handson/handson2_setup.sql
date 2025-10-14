@@ -139,6 +139,7 @@ BEGIN
             '\n   - 数量、金額、価格、スコア、率などの数値型カラム',
             '\n   - 単純なカラム参照と計算式の両方を含める',
             '\n   - 例 (単純)：QUANTITY、PRICE、AMOUNT',
+            '\n   - 例 (計算)：revenue AS テーブル名.QUANTITY * テーブル名.UNIT_PRICE のように「新しいファクト名 AS 計算式」の形式で記述',
             '\n   - 例 (計算)：revenue AS QUANTITY * UNIT_PRICE、discount_amount AS TOTAL_PRICE * 0.1',
             '\n\n3. DIMENSIONS (属性データ)：',
             '\n   - ID、名前、日付、カテゴリ、ステータス',
@@ -254,3 +255,4 @@ call generate_semantic_view(
     'FX_ALL_SEMANTIC_VIEW',
     'openai-gpt-4.1'
 );
+
