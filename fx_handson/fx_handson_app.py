@@ -1,3 +1,4 @@
+
 """
 為替分析システム
 Multi-Currency FX Analytics Dashboard
@@ -7,6 +8,11 @@ Multi-Currency FX Analytics Dashboard
 - 複数通貨ペアの比較分析
 - テクニカル指標（RSI, MACD, ボリンジャーバンド等）
 - AI市場分析（Snowflake Cortex）
+
+事前準備: 
+- パッケージにplotlyを追加
+- パッケージのStreamlitのバージョンを1.48.0に変更して実行
+
 """
 
 import streamlit as st
