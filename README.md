@@ -44,14 +44,15 @@ Snowflake Cortex Searchを使った検索アプリケーション
 ### fx_handson の実行方法
 
 #### 1. Notebookでの実行
-1. Snowflake Notebookで`fx_handson.ipynb`を開く
-2. セルを順番に実行していく
+1. handson1_setup.sqlを実行
+2. MarketplaceからSNOWFLAKE PUBLIC DATA (FREE)をダウンロード
+3. セルを順番に実行していく
+4. Streamlitアプリを開いて動作を確認
 
-#### 2. Streamlitアプリの実行
-1. `handson1_setup.sql`または`handson2_setup.sql`を実行してデータを準備
-2. Snowflake上でStreamlitアプリを作成
-3. `fx_handson_app.py`のコードをコピー＆ペースト
-4. アプリを実行
+#### 2. Cortex Analystの実行
+1. handson2_setup.sqlを実行
+2. Snowsightよりエージェントを作成
+3. Snowflake Intelligenceを実行
 
 ### simple_search_app の実行方法
 
@@ -59,6 +60,8 @@ Snowflake Cortex Searchを使った検索アプリケーション
 2. Snowflake上でStreamlitアプリを作成
 3. `streamlit_app.py`と`pages/1_standard_search.py`をアップロード
 4. アプリを実行
+
+
 
 ## 📊 データソース
 
@@ -80,14 +83,7 @@ Snowflake Cortex Searchを使った検索アプリケーション
 - [Snowflake Cortex AI Functions](https://docs.snowflake.com/en/user-guide/snowflake-cortex/llm-functions)
 - [Snowflake Pandas API](https://docs.snowflake.com/ja/developer-guide/snowpark/python/pandas-on-snowflake)
 - [Streamlit Documentation](https://docs.streamlit.io/)
-- [Plotly Documentation](https://plotly.com/python/)
-
-## 📝 ライセンス
-
-このプロジェクトはハンズオン教材として提供されています。
-
+- 
 ---
 
-**作成**: Snowflake Japan  
-**日付**: 2025年10月
 
