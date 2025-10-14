@@ -23,14 +23,15 @@ CREATE OR REPLACE GIT REPOSITORY GIT_INTEGRATION_FOR_HANDSON
 
 -- Notebookの作成
 CREATE OR REPLACE NOTEBOOK fx_handson
-    FROM @GIT_INTEGRATION_FOR_HANDSON/branches/main
+    FROM @GIT_INTEGRATION_FOR_HANDSON/branches/main/fx_handson
     MAIN_FILE = 'fx_handson.ipynb'
     QUERY_WAREHOUSE = COMPUTE_WH
     WAREHOUSE = COMPUTE_WH;
 
 -- Streamlit in Snowflakeの作成
 CREATE OR REPLACE STREAMLIT fx_analysis_app
-    FROM @GIT_INTEGRATION_FOR_HANDSON/branches/main
+    FROM @GIT_INTEGRATION_FOR_HANDSON/branches/main/fx_handson
     MAIN_FILE = 'fx_handson_app.py'
     QUERY_WAREHOUSE = COMPUTE_WH;
+
 
