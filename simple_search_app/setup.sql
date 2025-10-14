@@ -292,18 +292,14 @@ INSERT INTO TRANSACTION VALUES
 -- デプロイ先のSchema配下にSiSコード配置用ステージ作成
 create or replace stage bank_db.bank_schema.bank_app_stage directory = (enable = true); --db_nameとschema_name部分は書き換えて利用ください
 ALTER ACCOUNT SET CORTEX_ENABLED_CROSS_REGION = 'ANY_REGION';
-/****** ここからSnowsightでの操作 ****** 
-ソースコードを上記bank_app_stageにGUIでアップロード（ディレクトリ構成は以下の通り）
 
-bank_app_stage
-　　|--streamlit_app.py
-　　|--environment.yml
-　　|--pages
-　　　　|--1_standard_search.py
-****** ここまでSnowsightでの操作 ******/
+-- Git連携
+CREATE OR REPLACE GIT REPOSITORY GIT_INTEGRATION_FOR_HANDSON
+  API_INTEGRATION = git_api_integration
+  ORIGIN = 'https://github.com/kmotokubota/fx_handson.git';
 
--- SiSアプリのデプロイ
-CREATE or replace STREAMLIT bank_db.bank_schema.bank_app --db_nameとschema_name部分は書き換えて利用ください
-FROM @bank_db.bank_schema.bank_app_stage --db_nameとschema_name部分は書き換えて利用ください
-MAIN_FILE = 'streamlit_app.py'
-QUERY_WAREHOUSE = compute_wh; --QUERY_WAREHOUSE部分は書き換えて利用ください
+-- Gitのソースコードを元にStreamlit in Snowflakeの作成
+CREATE OR REPLACE STREAMLIT simple_search_app
+    FROM @GIT_INTEGRATION_FOR_HANDSON/branches/main/simple_search_app
+    MAIN_FILE = 'streamlit_app.py'
+    QUERY_WAREHOUSE = COMPUTE_WH;
