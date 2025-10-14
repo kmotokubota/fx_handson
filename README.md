@@ -83,7 +83,7 @@ Snowflake Cortex Searchを使った検索アプリケーション
 - [Snowflake Cortex AI Functions](https://docs.snowflake.com/en/user-guide/snowflake-cortex/llm-functions)
 - [Snowflake Pandas API](https://docs.snowflake.com/ja/developer-guide/snowpark/python/pandas-on-snowflake)
 - [Streamlit Documentation](https://docs.streamlit.io/)
-- 
+
 ---
 
 
