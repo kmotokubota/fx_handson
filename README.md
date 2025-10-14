@@ -1,6 +1,6 @@
-# FX Handson - Snowflakeハンズオン
+# FX Handson - マーケットプレイスデータを活用した為替分析Snowflakeハンズオン
 
-Snowflakeハンズオン教材です。為替データ分析とCortex Searchを使った検索アプリケーションを学びます。
+Snowflakeハンズオン教材です。マーケットプレイス上の為替データを使った分析とCortex Searchを使った検索アプリケーションを学びます。
 
 ## 📁 プロジェクト構成
 
