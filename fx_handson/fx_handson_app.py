@@ -1,5 +1,5 @@
 """
-楽天銀行向け 為替分析システム
+為替分析システム
 Multi-Currency FX Analytics Dashboard
 
 機能:

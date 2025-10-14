@@ -1,6 +1,6 @@
-# FX Handson - 楽天銀行向けSnowflakeハンズオン
+# FX Handson - Snowflakeハンズオン
 
-楽天銀行様向けのSnowflakeハンズオン教材です。為替データ分析とCortex Searchを使った検索アプリケーションを学びます。
+Snowflakeハンズオン教材です。為替データ分析とCortex Searchを使った検索アプリケーションを学びます。
 
 ## 📁 プロジェクト構成
 
@@ -89,6 +89,5 @@ Snowflake Cortex Searchを使った検索アプリケーション
 ---
 
 **作成**: Snowflake Japan  
-**対象**: 楽天銀行様ハンズオン  
 **日付**: 2025年10月
 
