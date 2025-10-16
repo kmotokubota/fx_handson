@@ -1,6 +1,6 @@
 # マーケットプレイスデータを活用した為替分析Snowflakeハンズオン
 
-Snowflakeハンズオン教材です。マーケットプレイス上の為替データを使った分析とCortex Searchを使った検索アプリケーションを学びます。
+Snowflakeハンズオン教材です。マーケットプレイス上の為替データを使った分析と検索アプリケーションを学びます。
 
 ## 📁 プロジェクト構成
 
@@ -54,7 +54,7 @@ Snowflakeハンズオン教材です。マーケットプレイス上の為替�
 
 ### simple_search_app の実行方法
 
-1. `setup.sql`を実行してCortex Search Serviceをセットアップ
+1. `setup.sql`を実行してセットアップ
 2. Snowflake上でStreamlitアプリを作成
 3. `streamlit_app.py`と`pages/1_standard_search.py`をアップロード
 4. アプリを実行
@@ -71,7 +71,6 @@ Snowflakeハンズオン教材です。マーケットプレイス上の為替�
 - **Snowflake SQL** - データ分析の基礎
 - **Snowflake Cortex AI** - AI_COMPLETE、AI_FILTER
 - **Snowflake Pandas API** - pandas互換のデータ処理
-- **Snowflake Cortex Search** - セマンティック検索
 - **Streamlit** - データアプリケーション開発
 - **Plotly** - インタラクティブな可視化
 
