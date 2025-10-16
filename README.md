@@ -22,7 +22,7 @@ Snowflakeハンズオン教材です。マーケットプレイス上の為替�
 - Streamlitでの可視化ダッシュボード作成
 
 ### 2. simple_search_app
-Snowflake Cortex Searchを使った検索アプリケーション
+定型検索アプリケーション
 
 **内容:**
 - `streamlit_app.py` - メインのStreamlitアプリ
@@ -31,9 +31,7 @@ Snowflake Cortex Searchを使った検索アプリケーション
 - `environment.yml` - Conda環境設定ファイル
 
 **学習内容:**
-- Snowflake Cortex Searchの基本
 - Streamlitでの検索UIの実装
-- マルチページアプリケーションの構築
 
 ## 🚀 使い方
 
