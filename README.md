@@ -50,7 +50,7 @@ Snowflakeハンズオン教材です。マーケットプレイス上の為替�
 #### 2. Cortex Analystの実行
 1. handson2_setup.sqlを実行
 2. Snowsightよりエージェントを作成
-3. Snowflake Intelligenceを実行
+3. Snowflake CoWorkを実行
 
 ### simple_search_app の実行方法
 
